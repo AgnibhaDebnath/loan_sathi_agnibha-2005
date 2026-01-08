@@ -1,0 +1,27 @@
+{"app_name":"Loan Sathi",
+ "nav":{"about":"About",
+        "apply":"Apply",
+        "my_loan":"My Loan",
+        "contact":"Contact",
+        "admin":"Admin"
+},
+"home":{
+    "hero_title":"Empowering Local Dreams",
+    "hero_subtitle":"Empowering individuals and businesses with fast, secure, and affordable loans",
+    "CTA":"Apply Now"
+},
+"Apply":{
+    "apply_heading":"Loan Application Form",
+    "first_name_input":"Enter your first name",
+    "last_name_input":"Enter your last name",
+    "mobile_no_input":"Enter mobile number",
+    "loan_amount_input":"Enter loan amount",
+    "select_input_ui":"Select loan type",
+    "loan":"loans",
+        "loan_Type":{
+        "personal":"personal Loan",
+        "Business":"Business Loan"
+    }
+    
+}
+}
