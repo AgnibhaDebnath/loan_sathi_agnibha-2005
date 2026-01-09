@@ -83,7 +83,7 @@ const EMISection = () => {
                                     <div className="md:flex-row flex justify-center gap-3 items-center flex-col ">
                                         <div className="flex justify-center">
 
-                                            <img src={`../../Backend/Uploads/${loan.image_url}`} alt="Borrower photo" className="w-20 h-20 rounded-full object-cover border-2 border-gray-300 shadow-md" /> </div>
+                                            <img src={`https://loan-sathi.onrender.com/Uploads/${loan.image_url}`} alt="Borrower photo" className="w-20 h-20 rounded-full object-cover border-2 border-gray-300 shadow-md" /> </div>
                                         <div className="flex justify-center ">
                                             <h2 className="text-center font-[poppins] font-bold text-2xl sm:text-3xl tracking-wide py-4 text-blue-500">Loan summery</h2>
                                         </div>
