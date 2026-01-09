@@ -4,10 +4,11 @@ import path from "path"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base:"/",
     server: {
     host: true, // allow network access
     port: 5173,
-    allowedHosts: ['.ngrok-free.dev'], // 👈 allow ngrok URLs
+      allowedHosts: ['.ngrok-free.dev'],  // 👈 allow ngrok URLs
   },
     resolve: {
     alias: {
