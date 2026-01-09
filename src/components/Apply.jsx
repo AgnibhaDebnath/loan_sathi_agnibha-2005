@@ -58,7 +58,7 @@ const Apply = () => {
     // Submit form data
     const submitFormData = async () => {
         try {
-            const response = await fetch("http://localhost:3000/apply", {
+            const response = await fetch("https://loan-sathi.onrender.com/apply", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ Borrower: [firstName, lastName], MobileNo: mobileNO, LoanType: loanType, LoanAmount: loanAmount })

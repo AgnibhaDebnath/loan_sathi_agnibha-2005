@@ -40,7 +40,7 @@ const AddLoanDetails = () => {
         formData.append("mobileNo", mobileNo)
         formData.append("image", borrowerImage)
         try {
-            const res = await fetch("http://localhost:3000/borrower-Details", {
+            const res = await fetch("https://loan-sathi.onrender.com/borrower-Details", {
                 method: "POST",
                 body: formData
             })
@@ -101,7 +101,7 @@ const AddLoanDetails = () => {
         e.preventDefault();
 
         try {
-            const res = await fetch("http://localhost:3000/loan-Details", {
+            const res = await fetch("https://loan-sathi.onrender.com/loan-Details", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

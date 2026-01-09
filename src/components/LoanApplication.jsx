@@ -39,7 +39,7 @@ const LoanApplications = () => {
         const token = localStorage.getItem("token")
         const loan_application_per_page = 2
         const skip = (currentPage - 1) * loan_application_per_page
-        fetch(`http://localhost:3000/loan-application?limit=${loan_application_per_page}&skip=${skip}`, {
+        fetch(`https://loan-sathi.onrender.com/loan-application?limit=${loan_application_per_page}&skip=${skip}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -69,7 +69,7 @@ const LoanApplications = () => {
     const updateStatus = async (permission) => {
         if (permission) {
             try {
-                const res = await fetch("http://localhost:3000/update-status", {
+                const res = await fetch("https://loan-sathi.onrender.com/update-status", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({

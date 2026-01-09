@@ -55,7 +55,7 @@ const AdminLogin = () => {
             const result = await confirmationResult.confirm(otp);
             const user = result.user;
             const token = await user.getIdToken()
-            const res = await fetch("http://localhost:3000/api/admin-login", {
+            const res = await fetch("https://loan-sathi.onrender.com/api/admin-login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -108,7 +108,7 @@ const AdminLogin = () => {
         e.preventDefault();
         setFormSubmit(true)
         try {
-            const res = await fetch("http://localhost:3000/verify-admin-mobileNo", {
+            const res = await fetch("https://loan-sathi.onrender.com/verify-admin-mobileNo", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -129,7 +129,7 @@ const AdminLogin = () => {
                 return
             } else {
                 setError(prev => ({ ...prev, mobileNoORNameMismatchError: "" }))
-                const responce = await fetch("http://localhost:3000/verify-password", {
+                const responce = await fetch("https://loan-sathi.onrender.com/verify-password", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",

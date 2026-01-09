@@ -61,7 +61,7 @@ const Borrowerlogin = () => {
             const user = result.user;
             const token = await user.getIdToken()
             console.log(token)
-            const res = await fetch("http://localhost:3000/api/borrower-login", {
+            const res = await fetch("https://loan-sathi.onrender.com/api/borrower-login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -103,7 +103,7 @@ const Borrowerlogin = () => {
         e.preventDefault();
         setFormSubmit(true)
         try {
-            const response = await fetch("http://localhost:3000/check-borrower-exist", {
+            const response = await fetch("https://loan-sathi.onrender.com/check-borrower-exist", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

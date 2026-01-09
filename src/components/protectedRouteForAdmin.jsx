@@ -15,7 +15,7 @@ const ProtectedrouteForAdmin = ({ children }) => {
                     setValidToken(false);
                     return;
                 }
-                const res = await fetch("http://localhost:3000/check-token-for-admin", {
+                const res = await fetch("https://loan-sathi.onrender.com/check-token-for-admin", {
                     method: "POST",
                     headers: {
                         Authorization: `Bearer ${token}`,

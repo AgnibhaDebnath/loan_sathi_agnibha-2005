@@ -15,7 +15,7 @@ const ProtectedRoute = ({ children }) => {
                 setLogin(true)
                 const token = localStorage.getItem("token")
                 console.log("Token sent to backend:", token);
-                const res = await fetch("http://localhost:3000/check-token", {
+                const res = await fetch("https://loan-sathi.onrender.com/check-token", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`,

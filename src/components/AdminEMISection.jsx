@@ -16,7 +16,7 @@ const AdminEMISection = () => {
         async function fetchData() {
             const emi_per_page = 2
             const skip = (currentPage - 1) * emi_per_page
-            const res = await fetch(`http://localhost:3000/get-emi-for-admin?limit=${emi_per_page}&skip=${skip}`, {
+            const res = await fetch(`https://loan-sathi.onrender.com/get-emi-for-admin?limit=${emi_per_page}&skip=${skip}`, {
                 method: "GET"
             })
             const date = await res.json()
@@ -32,7 +32,7 @@ const AdminEMISection = () => {
 
 
             e.preventDefault()
-            const res = await fetch("http://localhost:3000/update-payment", {
+            const res = await fetch("https://loan-sathi.onrender.com/update-payment", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

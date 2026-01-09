@@ -12,7 +12,7 @@ const EMISection = () => {
     const token = localStorage.getItem("token")
     useEffect(() => {
         async function fetchData() {
-            const res = await fetch("http://localhost:3000/get-loan-details", {
+            const res = await fetch("https://loan-sathi.onrender.com/get-loan-details", {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`
@@ -45,7 +45,7 @@ const EMISection = () => {
     async function fetchLatestEMIforLoan(loanID, pageNumber) {
         const emi_per_page = 1
         const skip = (pageNumber - 1) * emi_per_page
-        const res = await fetch(`http://localhost:3000/get-emi-details?limit=${emi_per_page}&skip=${skip}`, {
+        const res = await fetch(`https://loan-sathi.onrender.com/get-emi-details?limit=${emi_per_page}&skip=${skip}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ loanID })

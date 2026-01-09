@@ -11,7 +11,7 @@ const LoanStatus = () => {
             const token = localStorage.getItem("token")
 
             try {
-                const res = await fetch("http://localhost:3000/loan-status", {
+                const res = await fetch("https://loan-sathi.onrender.com/loan-status", {
                     method: "GET",
                     headers: {
                         Authorization: `Bearer ${token}`,
