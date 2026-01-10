@@ -106,7 +106,7 @@ const AdminEMISection = () => {
                                                 <span className=""> <Calendar className="inline text-blue-400 mb-1" size={18} /> payment date:{" "} {emi.payment_date ? new Date(emi.payment_date).toLocaleDateString(undefined, { month: "long", year: "numeric", day: "numeric", }) : "Not paid yet"} </span>
                                             </td>
                                             <td className="bg-gray-100 pl-2">
-                                                <span className="block">Due this month :  <IndianRupee className="inline" size={17} strokeWidth={2.5} />{parseFloat(emi.penalty) + parseFloat(emi.emi_amount) - parseFloat(emi.amount_paid)}</span>
+                                                <span className="block">Due this month :  <IndianRupee className="inline" size={17} strokeWidth={2.5} />{Math.max(0, parseFloat(emi.penalty) + parseFloat(emi.emi_amount) - parseFloat(emi.amount_paid))}</span>
                                                 <span>Includes penalty : <span><IndianRupee className="inline" n size={17} strokeWidth={2.5} /></span>{emi.penalty}</span>
 
                                             </td>
