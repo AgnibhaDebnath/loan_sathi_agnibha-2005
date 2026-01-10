@@ -626,18 +626,6 @@ body {
   }
 }
 
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
 .pointer-events-none {
   pointer-events: none;
 }
@@ -1175,6 +1163,10 @@ body {
   min-width: var(--cell-size);
 }
 
+.min-w-\[1090px\] {
+  min-width: 1090px;
+}
+
 .min-w-\[890px\] {
   min-width: 890px;
 }
@@ -1183,12 +1175,12 @@ body {
   min-width: 8rem;
 }
 
-.min-w-\[990px\] {
-  min-width: 990px;
-}
-
 .min-w-\[var\(--radix-select-trigger-width\)\] {
   min-width: var(--radix-select-trigger-width);
+}
+
+.min-w-\[1091px\] {
+  min-width: 1091px;
 }
 
 .max-w-5xl {
@@ -1610,6 +1602,11 @@ body {
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
 
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
+}
+
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
@@ -1708,11 +1705,6 @@ body {
 .bg-yellow-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(254 252 232 / var(--tw-bg-opacity, 1));
-}
-
-.bg-gray-50 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1));
 }
 
 .bg-opacity-50 {
@@ -2062,16 +2054,8 @@ body {
   padding-left: 0.5rem;
 }
 
-.pl-2\.5 {
-  padding-left: 0.625rem;
-}
-
 .pl-3 {
   padding-left: 0.75rem;
-}
-
-.pl-4 {
-  padding-left: 1rem;
 }
 
 .pl-5 {
@@ -2084,10 +2068,6 @@ body {
 
 .pr-1 {
   padding-right: 0.25rem;
-}
-
-.pr-2\.5 {
-  padding-right: 0.625rem;
 }
 
 .pr-8 {
@@ -2170,6 +2150,10 @@ body {
   font-size: 1.3rem;
 }
 
+.text-\[1\.7rem\] {
+  font-size: 1.7rem;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -2201,22 +2185,6 @@ body {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[1\.6rem\] {
-  font-size: 1.6rem;
-}
-
-.text-\[1\.65rem\] {
-  font-size: 1.65rem;
-}
-
-.text-\[1\.69rem\] {
-  font-size: 1.69rem;
-}
-
-.text-\[1\.7rem\] {
-  font-size: 1.7rem;
 }
 
 .font-bold {
@@ -2762,6 +2730,11 @@ body {
   background-color: rgb(250 204 21 / 0.1);
 }
 
+.hover\:hover\:text-blue-600:hover:hover {
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
+}
+
 .hover\:text-accent-foreground:hover {
   color: hsl(var(--accent-foreground));
 }
@@ -2784,11 +2757,6 @@ body {
 .hover\:text-yellow-300:hover {
   --tw-text-opacity: 1;
   color: rgb(253 224 71 / var(--tw-text-opacity, 1));
-}
-
-.hover\:hover\:text-blue-600:hover:hover {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity, 1));
 }
 
 .hover\:underline:hover {
