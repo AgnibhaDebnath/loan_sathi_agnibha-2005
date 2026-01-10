@@ -150,7 +150,7 @@ const EMISection = () => {
                                                             <h3 className="font-semibold  text-[1rem]  font-[poppins]"><Banknote className="inline text-green-500 mr-1" />paid this month:<span className="font-sans text-green-500 "><IndianRupee className="inline" strokeWidth={2.5} size={17} />{emi.amount_paid}</span></h3>
                                                         </div>
                                                         <div className="flex min-[783px]:justify-start justify-start ">
-                                                            <h3 className="font-semibold text-[.9rem] font-[poppins]"><span><Banknote className="inline text-gray-700" />Remaining for this month: </span><span>{emi.emi_amount - emi.amount_paid}</span></h3>
+                                                            <h3 className="font-semibold text-[.9rem] font-[poppins]"><span><Banknote className="inline text-gray-700" />Remaining for this month: </span><span>{Math.max(0.00, emi.emi_amount - emi.amount_paid)}</span></h3>
                                                         </div>
                                                         <div className="flex min-[783px]:justify-centre justify-start">
                                                             {emi.amount_paid == 0 && <h3 className="font-semibold text-[1.05rem]   font-[poppins]"><TriangleAlert className="inline  text-gray-500 mr-0.5" size={19} />Payment status: <span className="p-2 bg-gray-100 text-gray-600 text-sm rounded-3xl">Unpaid</span></h3>}
