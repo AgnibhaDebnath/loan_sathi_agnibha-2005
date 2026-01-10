@@ -77,7 +77,7 @@ const AdminEMISection = () => {
                     <div className="p-5  rounded-3xl mx-4 md:w-4/5 w-11/12 border-gray-400 border-2">
 
                         <div className=" w-full overflow-x-auto">
-                            <table className="border-collapse border-2 border-green-200 min-w-[990px] w-full">
+                            <table className="border-collapse border-2 border-green-200 min-w-[1090px] w-full">
                                 <thead className="bg-gradient-to-r from-teal-500 to-cyan-500  brightness-125 font-[poppins]">
                                     <tr className="font-semibold ">
                                         <th className="border-r border-gray-300 p-2 text-left text-base ">Borrower Info</th>
