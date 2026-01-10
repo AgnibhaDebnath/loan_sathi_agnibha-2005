@@ -179,7 +179,7 @@ const EMISection = () => {
                                                                     return d.getTime();
                                                                 })() && <h3 className="font-semibold text-[1.05rem]   font-[poppins]">< Clock className="inline text-orange-400" />EMI Status: <span className="p-2 text-sm bg-orange-100 text-orange-600 rounded-3xl">Grace period</span></h3>}
 
-                                                            {new Date().setHours(0, 0, 0, 0) > (() => {
+                                                            {emi.amount_paid == 0.00 && new Date().setHours(0, 0, 0, 0) > (() => {
                                                                 const d = new Date(emi.due_date);
 
                                                                 d.setHours(0, 0, 0, 0);
