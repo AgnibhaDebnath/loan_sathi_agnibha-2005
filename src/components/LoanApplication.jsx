@@ -247,9 +247,9 @@ const LoanApplications = () => {
                         </div>
                     </div>
                     <div className="flex justify-center w-full">
-                        <div className="flex justify-center gap-6 my-4 py-5 w-96 px-6 shadow-2xl">
-                            <button onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} className="bg-gray-800 text-white rounded-md px-4 py-1 font-medium  shadow-sm hover:bg-gray-700 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled={currentPage === 1} > <ChevronsLeft className="inline mr-1 mb-1" size={18} strokeWidth={3} /> Previous </button>
-                            <button onClick={() => setCurrentPage(prev => prev + 1)} disabled={currentPage >= totalPage} className="bg-gray-700 text-white rounded-md px-7 py-1 font-medium  shadow-sm hover:bg-gray-800 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"  > Next <ChevronsRight className="inline ml-1 mb-0.5" size={18} strokeWidth={3} /> </button>
+                        <div className="flex justify-center gap-6 my-4 py-5 w-96 px-4 sm:px-6 shadow-2xl">
+                            <button onClick={() => setCurrentPage(prev => Math.max(prev - 1, 1))} className="bg-gray-800 text-white rounded-md sm:px-4 py-1 font-medium  shadow-sm hover:bg-gray-700 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed" disabled={currentPage === 1} > <ChevronsLeft className="inline mr-1 mb-1" size={18} strokeWidth={3} /> Previous </button>
+                            <button onClick={() => setCurrentPage(prev => prev + 1)} disabled={currentPage >= totalPage} className="bg-gray-700 text-white rounded-md sm:px-7 py-1 font-medium  shadow-sm hover:bg-gray-800 transition duration-300 disabled:opacity-50 disabled:cursor-not-allowed"  > Next <ChevronsRight className="inline ml-1 mb-0.5" size={18} strokeWidth={3} /> </button>
                         </div>
                     </div>
                 </div >
