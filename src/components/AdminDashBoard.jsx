@@ -17,11 +17,8 @@ const AdminDashboard = () => {
 
     const { TotalLoanAmount, TotalEMIAmount, TotalActiveBorrowers, EMIPending, pendingCount, approvedCount, rejectedCount } = useStore()
     const CardData = [
-        { label: "Total Loan amount", icon: "💰", value: TotalLoanAmount },
-        { label: "Total EMI received", icon: "💰", value: TotalEMIAmount },
         { label: "Borrower", icon: "🧑‍🤝‍🧑 ", value: [{ category: "Borrower", new: 2, existing: 6 }] },
         { label: "EMI", icon: " 💳", value: [{ status: "not paid", count: 2 }, { status: "paid", count: 3 }] },
-        // { label: "Application", icon: "📄", value: [pendingCount, approvedCount, rejectedCount] }
 
         { label: "Application", icon: "📄", value: [{ status: "pending", count: pendingCount }, { status: "Approved", count: approvedCount }, { status: "rejected", count: rejectedCount }] }
     ]
@@ -41,7 +38,7 @@ const AdminDashboard = () => {
                         <div key={index} className="font-medium text-[1.1rem] rounded-2xl  shadow-xl  hover:scale-105 transition duration-200 my-3  hover:shadow-2xl drop-shadow backdrop-blur-sm ">
 
                             {item.label === "Application" ? <>
-                                <div className='bg-yellow-100 py-5 px-5 h-60 w-96 rounded-2xl  '>
+                                <div className='bg-yellow-100 py-5 px-5 h-60 w-72 min-[390px]:w-80 rounded-2xl min-[480px]:w-96 '>
                                     <div className='flex justify-center bg-yellow-500 text-white font-[poppins] p-1 rounded-full items-center  font-semibold'>
                                         <h1 className='text-center '><span className="inline-block text-2xl ">{item.icon}</span>{item.label}</h1>
                                     </div>
@@ -78,7 +75,7 @@ const AdminDashboard = () => {
                                     </div>
                                 </div>
                             </> : item.label == "EMI" ? <>
-                                <div className='py-5 px-5 h-60 w-96 rounded-2xl bg-green-100'>
+                                <div className='py-5 px-5 h-60 w-72 min-[390px]:w-80 min-[480px]:w-96 rounded-2xl bg-green-100'>
                                     <div className='flex justify-center bg-green-500  text-white font-[poppins] p-1 rounded-full items-center  font-semibold'>
                                         <h1 className='text-center '><span className="text-2xl inline">{item.icon}</span>EMI details per month</h1>
                                     </div>
@@ -115,7 +112,7 @@ const AdminDashboard = () => {
                                     </div>
                                 </div>
                             </> : item.label == "Borrower" ? <>
-                                <div className='py-5 px-5 h-60 w-96 rounded-2xl bg-blue-100'>
+                                <div className='py-5 px-5 h-60 w-72 min-[390px]:w-80 min-[480px]:w-96 rounded-2xl bg-blue-100'>
                                     <div className='flex justify-center bg-blue-500 text-white font-[poppins] p-1 rounded-full items-center  font-semibold'>
                                         <h1 className='text-center '><span className="text-2xl inline">{item.icon}</span>Borrower insights </h1>
                                     </div>
@@ -144,10 +141,9 @@ const AdminDashboard = () => {
 
                                     </div>
                                 </div>
-                            </> : item.value}
+                            </> : ""}
 
-                            {(index == 0 || index == 1) ? <IndianRupee size={15} /> : null
-                            }
+
 
                         </div >
                     )}
