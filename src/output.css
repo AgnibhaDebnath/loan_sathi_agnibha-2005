@@ -1686,11 +1686,6 @@ body {
   background-color: hsl(var(--card));
 }
 
-.bg-cyan-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(207 250 254 / var(--tw-bg-opacity, 1));
-}
-
 .bg-destructive {
   background-color: hsl(var(--destructive));
 }
@@ -1740,11 +1735,6 @@ body {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity, 1));
 }
 
-.bg-indigo-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 231 255 / var(--tw-bg-opacity, 1));
-}
-
 .bg-muted {
   background-color: hsl(var(--muted));
 }
@@ -1764,11 +1754,6 @@ body {
 
 .bg-primary\/20 {
   background-color: hsl(var(--primary) / 0.2);
-}
-
-.bg-purple-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
 }
 
 .bg-red-50 {
@@ -2397,11 +2382,6 @@ body {
 
 .text-card-foreground {
   color: hsl(var(--card-foreground));
-}
-
-.text-cyan-400 {
-  --tw-text-opacity: 1;
-  color: rgb(34 211 238 / var(--tw-text-opacity, 1));
 }
 
 .text-cyan-500 {
@@ -3153,6 +3133,12 @@ body {
   --tw-ring-color: hsl(var(--ring) / 0.5);
 }
 
+@media (min-width: 390px) {
+  .min-\[390px\]\:w-80 {
+    width: 20rem;
+  }
+}
+
 @media (min-width: 450px) {
   .min-\[450px\]\:w-10\/12 {
     width: 83.333333%;
@@ -3162,6 +3148,12 @@ body {
 @media (min-width: 465px) {
   .min-\[465px\]\:pl-10 {
     padding-left: 2.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .min-\[480px\]\:w-96 {
+    width: 24rem;
   }
 }
 
@@ -3236,14 +3228,14 @@ body {
     padding-right: 0.75rem;
   }
 
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .sm\:px-7 {
@@ -3251,9 +3243,9 @@ body {
     padding-right: 1.75rem;
   }
 
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .sm\:text-2xl {
