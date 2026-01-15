@@ -173,7 +173,7 @@ const LoanApplications = () => {
                                                 <td className="border-r  border-gray-300 p-2 text-left text-base font-medium"><span className="block">
                                                     <User className="inline" />{loan.first_name} {loan.last_name}
                                                 </span>
-                                                    <span className="block mr-2"><Phone className="inline-block text-green-500" size={18} />{loan.mobile_no.slice(0, -4).replace(/./g, "X") + loan.mobile_no.slice(-4)}</span>
+                                                    <span className="block"><Phone className="inline-block text-green-500  mr-2" size={18} />{loan.mobile_no.slice(0, -4).replace(/./g, "X") + loan.mobile_no.slice(-4)}</span>
                                                 </td>
                                                 <td className="border-r border-gray-300 p-2 text-left text-base font-medium bg-gray-100">{loan.loan_type}</td>
                                                 <td className="border-r border-gray-300 p-2 text-left text-base font-medium"><span><IndianRupee className="inline " size={17} strokeWidth={2.5} /></span>{loan.loan_amount}</td>
